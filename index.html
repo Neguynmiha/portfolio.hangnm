@@ -18,7 +18,7 @@
     <div class="vn-pattern-bg"></div>
 
     <!-- Header Navigation -->
-    <header class="navbar" id="navbar">
+    <header class="navbar fade-in-down" id="navbar">
         <div class="nav-container">
             <a href="#" class="nav-logo">
                 <span class="drum-icon">
@@ -38,10 +38,9 @@
                 <a href="#activities" class="nav-link">Hoạt động</a>
                 <a href="#featured" class="nav-link">Sự kiện Tiêu biểu</a>
                 <a href="#skills" class="nav-link">Kỹ năng</a>
-                <a href="#contact" class="nav-link btn-nav">Liên hệ</a>
             </nav>
             <div class="nav-actions">
-                <button id="bgm-quick-toggle" class="icon-btn bgm-btn" title="Phát/Dừng Nhạc nền: Đào Liễu">
+                <button id="bgm-quick-toggle" class="icon-btn bgm-btn" title="Phát/Dừng Nhạc nền: Đào Liễu - Nhà Trẻ ft. NSND Thu Huyền">
                     <span class="music-note">🎵</span>
                 </button>
                 <button id="theme-toggle" class="icon-btn" aria-label="Đổi giao diện">
@@ -56,41 +55,44 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
+        <!-- Hero Section with Contact Info Badges (DOB, Phone, Email) -->
         <section class="hero-section" id="hero">
             <div class="hero-bamboo-bg"></div>
             <div class="container hero-container">
                 <div class="hero-content">
-                    <div class="badge hero-badge">
+                    <div class="badge hero-badge stagger-1">
+                        <span class="badge-icon">🎋</span> Văn hóa Việt Nam & Sự kiện Học thuật
                     </div>
-                    <h1 class="hero-title">
+                    <h1 class="hero-title stagger-2">
                         Nguyễn Minh Hằng
                     </h1>
-                    <p class="hero-subtitle">
+                    <p class="hero-subtitle stagger-3">
                         Sinh viên năm 3 chuyên ngành <strong>Kinh doanh Quốc tế – Trường Đại học Ngoại Thương</strong>.<br>
                         Trưởng ban Học thuật tại <em>Hanoi Exploring</em> với đam mê kết nối, lan tỏa nét đẹp văn hóa Việt Nam đến bạn bè quốc tế.
                     </p>
 
-                    <!-- Contact Badges -->
-                    <div class="quick-info-pills">
-                        <span class="info-pill"><i class="pill-icon">📅</i> 20/09/2005</span>
-                        <span class="info-pill"><i class="pill-icon">📞</i> 0976 490 201</span>
-                        <span class="info-pill"><i class="pill-icon">✉️</i> nmh09202005@gmail.com</span>
+                    <!-- Contact Info Badges (DOB, Phone, Email) -->
+                    <div class="quick-info-pills stagger-4">
+                        <span class="info-pill"><i class="pill-icon">🎂</i> Ngày sinh: 20/09/2005</span>
+                        <a href="tel:0976490201" class="info-pill info-link"><i class="pill-icon">📞</i> SĐT: 0976 490 201</a>
+                        <a href="mailto:nmh09202005@gmail.com" class="info-pill info-link"><i class="pill-icon">✉️</i> Email: nmh09202005@gmail.com</a>
                     </div>
 
-                    <div class="hero-cta">
+                    <div class="hero-cta stagger-5">
                         <a href="#featured" class="btn btn-primary">
                             <span>Sự Kiện Tiêu Biểu</span>
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                         </a>
+                        <a href="#experience" class="btn btn-secondary">Kinh Nghiệm</a>
                     </div>
                 </div>
 
-                <!-- Avatar Card with Upload Capability -->
-                <div class="hero-card-wrapper">
+                <!-- Avatar Card -->
+                <div class="hero-card-wrapper stagger-6">
                     <div class="profile-card vn-frame">
                         <div class="avatar-container">
                             <div class="avatar-frame">
+                                <img id="user-avatar-img" src="./Avatar.jpg" alt="Ảnh đại diện Nguyễn Minh Hằng" class="avatar-img">
                                 <label for="avatar-upload-input" class="avatar-upload-btn" title="Nhấn để tải/thay đổi ảnh đại diện">
                                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
                                     <span>Thay ảnh</span>
@@ -101,7 +103,7 @@
                         <h3 class="profile-name">Nguyễn Minh Hằng</h3>
                         <p class="profile-role">Trưởng ban Học thuật @ Hanoi Exploring</p>
                         <div class="profile-interests-tags">
-                            <span class="hobby-tag">🌾 Tìm hiểu Văn hóa Việt Nam</span>
+                            <span class="hobby-tag">🌾 Văn hóa Việt</span>
                             <span class="hobby-tag">🎬 Xem phim</span>
                             <span class="hobby-tag">🎮 Chơi game</span>
                             <span class="hobby-tag">🎶 Nghe nhạc</span>
@@ -112,7 +114,7 @@
         </section>
 
         <!-- About Section -->
-        <section class="section" id="about">
+        <section class="section reveal-section" id="about">
             <div class="container">
                 <div class="section-header">
                     <span class="sub-heading-vn">Giới Thiệu Bản Thân</span>
@@ -123,17 +125,18 @@
                     <p class="about-text">
                         Là sinh viên ngành <strong>Kinh doanh Quốc tế tại Đại học Ngoại Thương</strong> với GPA <strong>3.38/4.0</strong>, 
                         tôi sở hữu tư duy phản biện, kỹ năng quản lý thời gian và khả năng làm việc nhóm hiệu quả. 
-                        Đặc biệt, với niềm yêu thích sâu sắc dành cho <strong>Văn hóa Việt Nam</strong>, tôi đã tham gia tổ chức nhiều workshop trải nghiệm văn hóa dân gian (làm quạt nan tre, nấu chè khoai dẻo, nem rán, xem phim điện ảnh tâm linh Việt) dành cho du khách và học viên quốc tế.
+                        Đặc biệt, với niềm yêu thích sâu sắc dành cho <strong>Văn hóa Việt Nam</strong>, tôi đã trực tiếp sáng tạo và tổ chức nhiều workshop trải nghiệm văn hóa dân gian (làm quạt nan tre, nấu chè khoai dẻo, nem rán, xem phim điện ảnh tâm linh Việt) dành cho du khách và học viên quốc tế.
                     </p>
                 </div>
             </div>
         </section>
 
         <!-- Education Section -->
-        <section class="section section-alt" id="education">
+        <section class="section section-alt reveal-section" id="education">
             <div class="container">
                 <div class="section-header">
-                    <span class="sub-heading-vn">Học vấn</span>
+                    <span class="sub-heading-vn">Nền Tảng Tri Thức</span>
+                    <h2 class="section-title">Học Vấn</h2>
                     <div class="bamboo-divider"><span>🎓</span></div>
                 </div>
                 <div class="education-grid">
@@ -155,15 +158,16 @@
         </section>
 
         <!-- Experience Section -->
-        <section class="section" id="experience">
+        <section class="section reveal-section" id="experience">
             <div class="container">
                 <div class="section-header">
                     <span class="sub-heading-vn">Kinh Nghiệm Thực Tế</span>
+                    <h2 class="section-title">Kinh Nghiệm Làm Việc</h2>
                     <div class="bamboo-divider"><span>📜</span></div>
                 </div>
                 <div class="timeline">
                     <!-- Item 1 -->
-                    <div class="timeline-item">
+                    <div class="timeline-item reveal-item" style="--stagger-index: 1;">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content vn-card">
                             <div class="timeline-header">
@@ -177,13 +181,13 @@
                                 <li><strong>Quản lý nhân sự:</strong> Phân công công việc, giám sát tiến độ đội ngũ CTV và tổ chức các buổi đào tạo nội bộ về kỹ năng sư phạm, giao tiếp.</li>
                                 <li><strong>Xây dựng nội dung:</strong> Biên soạn giáo án, tài liệu lớp Tiếng Việt Cộng đồng; lập kế hoạch và điều phối các sự kiện trải nghiệm văn hóa.</li>
                                 <li><strong>Quản lý chất lượng:</strong> Đảm bảo trải nghiệm tối ưu cho học viên nước ngoài; phối hợp liên ban để chuẩn hóa quy trình vận hành và quản lý dữ liệu.</li>
-                                <li><strong>Điều phối sự kiện:</strong> Phối hợp lên kế hoạch, điều phối tổ chức 5+ sự kiện văn hóa quy mô vừa và nhỏ.</li>
+                                <li><strong>Điều phối sự kiện:</strong> Phối hợp lên kế hoạch, điều phối tổ chức 5 sự kiện văn hóa quy mô vừa và nhỏ.</li>
                             </ul>
                         </div>
                     </div>
 
                     <!-- Item 2 -->
-                    <div class="timeline-item">
+                    <div class="timeline-item reveal-item" style="--stagger-index: 2;">
                         <div class="timeline-dot"></div>
                         <div class="timeline-content vn-card">
                             <div class="timeline-header">
@@ -204,7 +208,7 @@
         </section>
 
         <!-- Activities Section -->
-        <section class="section section-alt" id="activities">
+        <section class="section section-alt reveal-section" id="activities">
             <div class="container">
                 <div class="section-header">
                     <span class="sub-heading-vn">Đóng Góp Cộng Đồng</span>
@@ -212,7 +216,7 @@
                     <div class="bamboo-divider"><span>🤝</span></div>
                 </div>
                 <div class="cards-grid">
-                    <div class="feature-card vn-card">
+                    <div class="feature-card vn-card reveal-item" style="--stagger-index: 1;">
                         <div class="card-icon">❤️</div>
                         <span class="activity-time">2023 – 2025</span>
                         <h3 class="card-title">CHIẾN DỊCH VÌ CỘNG ĐỒNG</h3>
@@ -222,7 +226,7 @@
                         </p>
                     </div>
 
-                    <div class="feature-card vn-card">
+                    <div class="feature-card vn-card reveal-item" style="--stagger-index: 2;">
                         <div class="card-icon">📚</div>
                         <span class="activity-time">2022 – 2023</span>
                         <h3 class="card-title">CLB SÁCH VÀ HÀNH ĐỘNG</h3>
@@ -236,8 +240,8 @@
             </div>
         </section>
 
-        <!-- FEATURED ACTIVITIES SECTION WITH IMAGE UPLOAD FEATURE -->
-        <section class="section" id="featured">
+        <!-- FEATURED ACTIVITIES SECTION -->
+        <section class="section reveal-section" id="featured">
             <div class="container">
                 <div class="section-header">
                     <span class="sub-heading-vn">Hình Ảnh & Trải Nghiệm</span>
@@ -257,7 +261,7 @@
                 <div class="featured-grid" id="featured-activities-grid">
                     
                     <!-- Card 1: Quạt Nan Tre -->
-                    <div class="act-card vn-card" data-id="act-1">
+                    <div class="act-card vn-card reveal-item" style="--stagger-index: 1;" data-id="act-1">
                         <div class="act-img-wrapper">
                             <img src="./WS Làm quạt nan.jpg" alt="Workshop The Bamboo Soul" class="act-img">
                             <label class="btn-change-act-img" title="Đổi ảnh hoạt động này">
@@ -273,7 +277,7 @@
                     </div>
 
                     <!-- Card 2: Chè Khoai Dẻo 1 -->
-                    <div class="act-card vn-card" data-id="act-2">
+                    <div class="act-card vn-card reveal-item" style="--stagger-index: 2;" data-id="act-2">
                         <div class="act-img-wrapper">
                             <img src="./WS Chè Khoai Dẻo.jpg" alt="Workshop The Chè Khoai Dẻo" class="act-img">
                             <label class="btn-change-act-img" title="Đổi ảnh hoạt động này">
@@ -289,7 +293,7 @@
                     </div>
 
                     <!-- Card 3: Chè Khoai Dẻo 2 -->
-                    <div class="act-card vn-card" data-id="act-3">
+                    <div class="act-card vn-card reveal-item" style="--stagger-index: 3;" data-id="act-3">
                         <div class="act-img-wrapper">
                             <img src="./Workshop Chè Khoai Dẻo.jpg" alt="Trải nghiệm Chè Khoai Dẻo" class="act-img">
                             <label class="btn-change-act-img" title="Đổi ảnh hoạt động này">
@@ -305,7 +309,7 @@
                     </div>
 
                     <!-- Card 4: Movie Night Ma Da -->
-                    <div class="act-card vn-card" data-id="act-4">
+                    <div class="act-card vn-card reveal-item" style="--stagger-index: 4;" data-id="act-4">
                         <div class="act-img-wrapper">
                             <img src="./Movie night.jpg" alt="The Movie Night: Ma Da" class="act-img">
                             <label class="btn-change-act-img" title="Đổi ảnh hoạt động này">
@@ -321,7 +325,7 @@
                     </div>
 
                     <!-- Card 5: Nem Rán Cooking Class -->
-                    <div class="act-card vn-card" data-id="act-5">
+                    <div class="act-card vn-card reveal-item" style="--stagger-index: 5;" data-id="act-5">
                         <div class="act-img-wrapper">
                             <img src="./Nem rán Cooking class.png" alt="Nem rán Cooking Class" class="act-img">
                             <label class="btn-change-act-img" title="Đổi ảnh hoạt động này">
@@ -336,12 +340,14 @@
                         </div>
                     </div>
 
-                    <!-- Card 6: Lớp học Tiếng Việt Cộng đồng -->
-                    <div class="act-card vn-card reel-card" data-id="act-6">
-                        <div class="act-img-wrapper reel-wrapper">
-                            <div class="reel-placeholder">
-                                <span>🎥 Video Reel Facebook</span>
-                            </div>
+                    <!-- Card 6: Lớp học Tiếng Việt Cộng đồng (Image updated to Lớp Học Tiếng Việt.png) -->
+                    <div class="act-card vn-card reel-card reveal-item" style="--stagger-index: 6;" data-id="act-6">
+                        <div class="act-img-wrapper">
+                            <img src="./Lớp Học Tiếng Việt.png" alt="Lớp Học Tiếng Việt Cộng Đồng" class="act-img">
+                            <label class="btn-change-act-img" title="Đổi ảnh hoạt động này">
+                                📷 Đổi ảnh
+                                <input type="file" accept="image/*" class="act-img-input hidden-input">
+                            </label>
                         </div>
                         <div class="act-info">
                             <span class="act-tag">Học Thuật & Ngôn Ngữ</span>
@@ -359,14 +365,15 @@
         </section>
 
         <!-- Skills Section -->
-        <section class="section section-alt" id="skills">
+        <section class="section section-alt reveal-section" id="skills">
             <div class="container">
                 <div class="section-header">
-                    <span class="sub-heading-vn">Hồ Sơ Kỹ Năng</span>
+                    <span class="sub-heading-vn">Kỹ Năng & Năng Lực</span>
+                    <h2 class="section-title">Hồ Sơ Kỹ Năng</h2>
                     <div class="bamboo-divider"><span>⭐</span></div>
                 </div>
                 <div class="skills-wrapper">
-                    <div class="skill-category vn-card">
+                    <div class="skill-category vn-card reveal-item" style="--stagger-index: 1;">
                         <h3 class="skill-cat-title">
                             <span class="cat-icon">🗣️</span> Kỹ Năng Chuyên Môn & Ngoại Ngữ
                         </h3>
@@ -379,7 +386,7 @@
                         </div>
                     </div>
 
-                    <div class="skill-category vn-card">
+                    <div class="skill-category vn-card reveal-item" style="--stagger-index: 2;">
                         <h3 class="skill-cat-title">
                             <span class="cat-icon">💡</span> Kỹ Năng Mềm & Tư Duy
                         </h3>
@@ -397,7 +404,7 @@
     </main>
 
     <!-- FLOATING BGM PLAYER WIDGET -->
-    <div class="bgm-player-widget" id="bgm-player-widget">
+    <div class="bgm-player-widget stagger-7" id="bgm-player-widget">
         <div class="bgm-disc-wrapper" id="bgm-disc">
             <div class="bgm-disc-inner">
                 <svg viewBox="0 0 100 100" class="disc-drum-svg">
@@ -408,9 +415,11 @@
             </div>
         </div>
         <div class="bgm-info">
+            <span class="bgm-title">Đào Liễu</span>
+            <span class="bgm-artist">Nhà Trẻ ft. NSND Thu Huyền</span>
             <div class="bgm-controls">
                 <button id="bgm-play-btn" class="bgm-ctrl-btn" title="Phát/Tạm dừng">▶️</button>
-                <input type="range" id="bgm-volume" min="0" max="1" step="0.1" value="0.7" title="Âm lượng">
+                <input type="range" id="bgm-volume" min="0" max="1" step="0.1" value="0.8" title="Âm lượng">
                 <label for="bgm-file-input" class="bgm-file-label" title="Tải file nhạc mp3 từ máy">
                     📂
                     <input type="file" id="bgm-file-input" accept="audio/*" class="hidden-input">
@@ -419,10 +428,9 @@
         </div>
     </div>
 
-    <!-- Hidden HTML5 Audio Element -->
-    <audio id="bgm-audio" loop preload="metadata">
-        <!-- Default fallback audio stream or custom audio -->
-        <source src="C:/Users/Admin/Downloads/Đào Liễu.mp3" type="audio/mpeg">
+    <!-- Audio Element -->
+    <audio id="bgm-audio" loop preload="auto" autoplay src="./Đào%20Liễu.mp3">
+        <source src="./Đào%20Liễu.mp3" type="audio/mpeg">
     </audio>
 
     <!-- MODAL ADD NEW ACTIVITY -->
@@ -460,7 +468,8 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-container">
-            <p>🎋 &copy; 2026 Nguyễn Minh Hằng | Portfolio 
+            <p>🎋 &copy; 2026 Nguyễn Minh Hằng | Portfolio Đậm Chất Văn Hóa Việt Nam</p>
+            <p>Màu Nắng Vàng & Xanh Lá Tre • Nhạc nền: Đào Liễu (Nhà Trẻ ft. NSND Thu Huyền)</p>
         </div>
     </footer>
 
